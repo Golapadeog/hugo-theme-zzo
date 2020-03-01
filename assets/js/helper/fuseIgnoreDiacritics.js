@@ -480,6 +480,10 @@
     dataWithDiacritics,
     distance
   ) {
+    if (!fuseSearchResult || fuseSearchResult.length == 0) {
+      return [];
+    }
+
     var parsedFuseSearchResult = [];
 
     for (var i = 0; i < fuseSearchResult.length; i++) {
@@ -520,9 +524,9 @@
         matches: refactoredMatches,
         item: resultWithDiacritics
       });
-
-      return parsedFuseSearchResult;
     }
+
+    return parsedFuseSearchResult;
   };
 
   // don't overwrite global if exists
