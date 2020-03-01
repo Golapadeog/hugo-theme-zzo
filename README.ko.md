@@ -389,6 +389,10 @@ commento = false
   dev-to = ""
   gitea = ""
 
+[fuseOptions]
+  ignoreDiacritics = false # ignore diacritics during search (example: "crème pâtissière aux œufs" = "creme patissiere aux oeufs")
+  distance = 100 # Determines how close the match must be to the beginning of the content
+  
 [donationOptions]
   enable = false # if set, the donation button will show up on the single page.
   alipay = "" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/

@@ -164,6 +164,10 @@ commento = false
   dev-to = ""
   gitea = ""
 
+[fuseOptions]
+  ignoreDiacritics = true # ignore diacritics during search (example: "crème pâtissière aux œufs" = "creme patissiere aux oeufs")
+  distance = 100 # Determines how close the match must be to the beginning of the content
+
 [donationOptions]
   enable = false
   alipay = "" 
